@@ -1,0 +1,32 @@
+@import url(./css/header/header.css);
+@import url(./css/header/menu.css);
+@import url(./css/banner/banner.css);
+@import url(./css/carrossel/carrossel.css);
+@import url(./css/topicos/topicos.css);
+@import url(./css/contato/contato.css);
+@import url(./css/footer/footer.css);
+
+:root{
+  --branco:#ffffff;
+  --cor-de-fundo: #EBECEE;
+  --amarelo-primario: #EB9B00;
+  --amarelo-secundario:#eca81f;
+  --azul-primario: #002F52;
+  --preto-primario: rgba(0, 0, 0, 0.85);
+  --font-principal:'Poppins', sans-serif; 
+  --azul-degrade: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
+  --fonte-logo: 'Josefin Sans', sans-serif;
+  --link-cinza: #474646;
+  --cinza-rodape:#858585;
+}
+
+body{
+  display: block;
+  background-color: var(--cor-de-fundo);
+  font-family:var(--font-principal) ;
+  font-size: 16px;
+  font-weight: 400;
+  overflow-x: hidden;
+  padding: 0;
+  margin: 0;
+}

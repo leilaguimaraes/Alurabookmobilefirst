@@ -1,0 +1,114 @@
+.cabecalho{
+  background-color: var(--branco);
+  padding: 0px 24px ;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.container{
+  display: flex;
+  align-items: center;
+}
+.cabecalho__menu-hamburguer{
+ display: inline-block;
+ width: 36px;
+ height: 36px;
+ background-image: url("../../src/Menu.svg");
+ background-repeat: no-repeat;
+ background-position: center;
+}
+.container__botao{
+  display:none ;
+}
+.container__botao:checked~ .container__rotulo>.cabecalho__menu-hamburguer {
+  background-image: url('../../src/Menu\ Aberto.png');
+  background-position: center;
+  width: 36px;
+  height: 36px;
+}
+.container__botao:checked~ .container__rotulo{
+  background: var(--azul-degrade);
+}
+.container__botao:checked~ .lista-menu{
+  display: block
+}
+.container__titulo, .opcoes{
+  display: none;
+}
+.container__imagem{
+  margin: 8px ;
+}
+.container__texto{
+  display: none;
+}
+
+
+@media screen and (min-width: 1024px) {
+  .container__titulo,
+  .container__titulo--negrito {
+    font-family: var(--fonte-logo);
+    font-size: 30px;
+  }
+  .container__titulo{
+    font-weight: 400;
+    margin-left: 10px;
+    display: block;
+  }
+  .container__titulo--negrito{
+    font-weight: 700;
+  }
+  .opcoes{
+    display: flex;
+    gap: 22px;
+    text-transform: uppercase;
+  }
+  .opcoes__botao:checked~ .opcoes__rotulo> .opcoes__item{
+    background: var(--azul-degrade);
+    color: var(--branco);
+  }
+  .opcoes__item{
+    padding: 40px 20px;
+    color: var(--azul-primario);
+    transition: 0.2s;
+  }
+  .opcoes__linkl, .lista-menu__link{
+    text-decoration: none;
+    color: var(--azul-primario);
+  }
+
+  .container__imagem-transparente, .cabecalho__menu-hamburguer, .opcoes__botao{
+    display: none;
+  }
+  
+  .opcoes__botao:checked~.lista-menu{
+    display: block;
+    width: auto;
+  }
+  
+  
+}
+
+@media screen and (min-width: 1728px){
+  .cabecalho{
+    padding: 0px 80px;
+  }
+  .container__link{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--preto-primario);
+    font-size: 20px;
+  }
+  .container__texto{
+    display: block;
+  }
+  .container__titulo{
+    margin-right: 24px;
+  }
+  .opcoes{
+    margin-right: auto;
+  }
+}
+
+
