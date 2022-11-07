@@ -72,7 +72,7 @@
     color: var(--azul-primario);
     transition: 0.2s;
   }
-  .opcoes__linkl, .lista-menu__link{
+  .opcoes__link, .lista-menu__link{
     text-decoration: none;
     color: var(--azul-primario);
   }

@@ -1,6 +1,6 @@
 .lista-menu{
   display: none;
-  padding: 24px 0;
+  padding: 24px;
   background-color: var(--branco);
   position: absolute;
   top: 100%;
@@ -11,6 +11,9 @@
   font-weight: 700;
   color: var(--amarelo-primario);
   padding-bottom: 8px;
+}
+.lista-menu__link{
+  margin: 16px 0;
 }
 .lista-menu__item{
   text-transform: uppercase;
