@@ -10,7 +10,7 @@ Projeto elaborado para a conclusão de formação html e css da Alura.
 | :fire: Desafio     | https://www.figma.com/file/sSMbIqKaGBd66Y8roxTk2p/AluraBooks?node-id=113%3A1676
 
 <!-- Inserir imagem com a #vitrinedev ao final do link -->
-https://imgur.com/4RMT3hn#vitrinedev
+![](https://imgur.com/4RMT3hn#vitrinedev)
 
 ## Detalhes do projeto
 
